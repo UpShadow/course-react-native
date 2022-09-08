@@ -2,10 +2,14 @@ import React from "react"
 import { Text } from "react-native"
 import Style from "./style"
 
-export default values => (
-    console.warn(values),
-    <Text style={Style.fontB}>
-        The past values were {values.num1} and {values.num2}.
-        Random value is: { Math.floor(Math.random() * values.num2) + values.num1 }
-    </Text>
-)
+export default ({min, max}) => {
+    //const { min, max } = values
+    const delta = max - min + 1
+    const random = parseInt(Math.random() * delta) + min
+    return (
+        <Text style={Style.fontB}>
+            The past values were {min} and {max}.
+            The random value is: { random }
+        </Text>
+    )
+}
