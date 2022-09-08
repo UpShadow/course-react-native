@@ -1,11 +1,11 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
 import CompStandard, { Comp1, Comp2 } from './components/Multi'
 import First from './components/First'
 
 export default () => (
-    <View>
+    <View style={style.App}>
         <CompStandard />
         <Comp1 />
         <Comp2 />
@@ -13,3 +13,10 @@ export default () => (
     </View>
 )
 
+const style = StyleSheet.create({
+    App: {
+        flexGrow: 1,
+        justifyContent: "center",
+        alignItems: "center",
+    }
+})
