@@ -1,7 +1,9 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import Title from './components/Title'
+import Counter from './components/Counter'
+//import Button from './components/Button'
+//import Title from './components/Title'
 //import Random from './components/Random'
 //import MinMax from './components/MinMax'
 // import CompStandard, { Comp1, Comp2 } from './components/Multi'
@@ -10,8 +12,12 @@ import Title from './components/Title'
 //passed parameters in {} is a number and in "" is a string
 export default () => (
     <View style={style.App}>
+        <Counter initial={100} step={13}/>
+        <Counter/>
+        {/*
+        <Button />
+         <Random min={1} max={10}/>
         <Title main="Registration Product" secondary="Product Registration Screen"/>
-        {/* <Random min={1} max={10}/>
         <MinMax min={3} max={20}/>
         <MinMax min={1} max={94}/>
         <CompStandard />
