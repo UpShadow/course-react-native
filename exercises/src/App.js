@@ -1,7 +1,8 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import Counter from './components/Counter'
+import Dad from './components/direct/Dad'
+// import Counter from './components/Counter'
 //import Button from './components/Button'
 //import Title from './components/Title'
 //import Random from './components/Random'
@@ -12,9 +13,10 @@ import Counter from './components/Counter'
 //passed parameters in {} is a number and in "" is a string
 export default () => (
     <View style={style.App}>
+        <Dad />
+        {/*
         <Counter initial={100} step={13}/>
         <Counter/>
-        {/*
         <Button />
         <Random min={1} max={10}/>
         <Title main="Registration Product" secondary="Product Registration Screen"/>
