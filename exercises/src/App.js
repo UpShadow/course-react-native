@@ -16,7 +16,7 @@ export default () => (
         <Counter/>
         {/*
         <Button />
-         <Random min={1} max={10}/>
+        <Random min={1} max={10}/>
         <Title main="Registration Product" secondary="Product Registration Screen"/>
         <MinMax min={3} max={20}/>
         <MinMax min={1} max={94}/>
